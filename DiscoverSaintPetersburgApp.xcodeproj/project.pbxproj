@@ -56,15 +56,55 @@
 		66066FEC29F68C5C001FE5B1 /* DiscoverSaintPetersburgApp */ = {
 			isa = PBXGroup;
 			children = (
-				66066FED29F68C5C001FE5B1 /* AppDelegate.swift */,
-				66066FEF29F68C5C001FE5B1 /* SceneDelegate.swift */,
-				66066FF129F68C5C001FE5B1 /* ViewController.swift */,
-				66066FF329F68C5C001FE5B1 /* Main.storyboard */,
-				66066FF629F68C5D001FE5B1 /* Assets.xcassets */,
-				66066FF829F68C5D001FE5B1 /* LaunchScreen.storyboard */,
-				66066FFB29F68C5D001FE5B1 /* Info.plist */,
+				6606700129F68C8B001FE5B1 /* App */,
+				6606700529F68CCF001FE5B1 /* Models */,
+				6606700229F68C93001FE5B1 /* ViewControllers */,
+				6606700329F68CAA001FE5B1 /* Storyboards */,
+				6606700429F68CB8001FE5B1 /* Resouces */,
 			);
 			path = DiscoverSaintPetersburgApp;
+			sourceTree = "<group>";
+		};
+		6606700129F68C8B001FE5B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				66066FED29F68C5C001FE5B1 /* AppDelegate.swift */,
+				66066FEF29F68C5C001FE5B1 /* SceneDelegate.swift */,
+				66066FFB29F68C5D001FE5B1 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6606700229F68C93001FE5B1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66066FF129F68C5C001FE5B1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6606700329F68CAA001FE5B1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				66066FF329F68C5C001FE5B1 /* Main.storyboard */,
+				66066FF829F68C5D001FE5B1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6606700429F68CB8001FE5B1 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				66066FF629F68C5D001FE5B1 /* Assets.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		6606700529F68CCF001FE5B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +328,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiscoverSaintPetersburgApp/Info.plist;
+				INFOPLIST_FILE = DiscoverSaintPetersburgApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.DiscoverSaintPetersburgApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +358,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiscoverSaintPetersburgApp/Info.plist;
+				INFOPLIST_FILE = DiscoverSaintPetersburgApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +371,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.DiscoverSaintPetersburgApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

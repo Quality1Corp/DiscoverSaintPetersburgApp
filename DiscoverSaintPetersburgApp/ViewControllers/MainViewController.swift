@@ -8,25 +8,29 @@
 import UIKit
 
 final class MainViewController: UITableViewController {
-
-    let location = Location()
+    
+    let places = Place.getPlaces()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func cancelButton(_ seque: UIStoryboardSegue) {}
 }
 
 // MARK: - UITableViewDataSource
 extension MainViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        location.places.count
+        Place.places.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         
-        cell.locationImage.image = UIImage(systemName: "mappin.square")
-        cell.nameLabel.text = location.places[indexPath.row]
+        cell.nameLabel.text = places[indexPath.row].name
+        cell.locationLabel.text = places[indexPath.row].location
+        cell.typeLabel.text = places[indexPath.row].type
+        cell.locationImage.image = UIImage(named: places[indexPath.row].name)
         
         return cell
     }
@@ -34,7 +38,5 @@ extension MainViewController {
 
 // MARK: - UITableViewDelegate
 extension MainViewController {
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        85
-    }
+    
 }
